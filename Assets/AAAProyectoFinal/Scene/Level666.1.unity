@@ -1590,7 +1590,7 @@ PrefabInstance:
       objectReference: {fileID: 1081805368}
     - target: {fileID: 7533518594173930136, guid: 24fb25e1fad4826418ce7be5c1cb2b9f, type: 3}
       propertyPath: transitionDuration
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7533518594173930136, guid: 24fb25e1fad4826418ce7be5c1cb2b9f, type: 3}
       propertyPath: targetValidity.field
@@ -18640,7 +18640,7 @@ PrefabInstance:
       objectReference: {fileID: 1957438520}
     - target: {fileID: 7533518594173930136, guid: 24fb25e1fad4826418ce7be5c1cb2b9f, type: 3}
       propertyPath: transitionDuration
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7533518594173930136, guid: 24fb25e1fad4826418ce7be5c1cb2b9f, type: 3}
       propertyPath: targetValidity.field
@@ -23609,6 +23609,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 479331053}
     m_Modifications:
+    - target: {fileID: 866193599220482990, guid: 22992e2c80a06ba4db167f84e189e9fa, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 866193599220482990, guid: 22992e2c80a06ba4db167f84e189e9fa, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 866193599220482990, guid: 22992e2c80a06ba4db167f84e189e9fa, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2074984478}
+    - target: {fileID: 866193599220482990, guid: 22992e2c80a06ba4db167f84e189e9fa, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 866193599220482990, guid: 22992e2c80a06ba4db167f84e189e9fa, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 866193599220482990, guid: 22992e2c80a06ba4db167f84e189e9fa, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Tilia.Trackers.PseudoBody.PseudoBodyFacade, Tilia.Trackers.PseudoBody.Unity.Runtime
+      objectReference: {fileID: 0}
+    - target: {fileID: 866193599220482990, guid: 22992e2c80a06ba4db167f84e189e9fa, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 866193599220482990, guid: 22992e2c80a06ba4db167f84e189e9fa, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3381553035295552196, guid: 22992e2c80a06ba4db167f84e189e9fa, type: 3}
       propertyPath: m_Name
       value: Input.UnityInputManager.Oculus.TouchRightController
@@ -23655,7 +23687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6135304468926078733, guid: 22992e2c80a06ba4db167f84e189e9fa, type: 3}
       propertyPath: Activated.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6135304468926078733, guid: 22992e2c80a06ba4db167f84e189e9fa, type: 3}
       propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
