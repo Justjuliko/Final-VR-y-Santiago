@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 4888092257981624}
   - component: {fileID: 33354799387394014}
   - component: {fileID: 23323382151922754}
-  - component: {fileID: 64248880939026046}
+  - component: {fileID: 1955544366374183004}
+  - component: {fileID: 7897349903705050704}
+  - component: {fileID: 6592516377711816692}
   m_Layer: 0
   m_Name: SM_Bed_01_Base
   m_TagString: Untagged
@@ -84,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64248880939026046
-MeshCollider:
+--- !u!65 &1955544366374183004
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,10 +104,51 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: b47f5c9ac3a4adc4582f259efbe3c8e5, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 245.08286, y: 17.822323, z: 121.40238}
+  m_Center: {x: -11.981452, y: 54.48075, z: -3.7395}
+--- !u!65 &7897349903705050704
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132389747817932}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.6872487, y: 130.9561, z: 121.40238}
+  m_Center: {x: -131.67947, y: 65.455185, z: -3.7395005}
+--- !u!65 &6592516377711816692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132389747817932}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.81038, y: 118.74387, z: 121.40238}
+  m_Center: {x: 107.65464, y: 59.348824, z: -3.7394998}
 --- !u!1 &1547185599624896
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +193,6 @@ GameObject:
   - component: {fileID: 4517490685551666}
   - component: {fileID: 33337303227313064}
   - component: {fileID: 23766697793474074}
-  - component: {fileID: 64210766755167126}
   m_Layer: 0
   m_Name: SM_Bed_01_S
   m_TagString: Untagged
@@ -223,25 +265,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64210766755167126
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829642673050802}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300004, guid: b47f5c9ac3a4adc4582f259efbe3c8e5, type: 3}
