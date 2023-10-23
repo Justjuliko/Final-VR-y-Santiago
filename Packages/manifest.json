@@ -20,7 +20,7 @@
     "io.extendreality.tilia.interactions.snapzone.unity": "2.3.10",
     "io.extendreality.tilia.locomotors.axismove.unity": "2.1.6",
     "io.extendreality.tilia.locomotors.teleporter.unity": "2.2.0",
-    "io.extendreality.tilia.trackers.pseudobody.unity": "2.1.60",
+    "io.extendreality.tilia.trackers.pseudobody.unity": "2.3.1",
     "io.extendreality.tilia.unityui": "https://github.com/studentutu/Tilia.UnityUI.git",
     "io.extendreality.tilia.visuals.basichand.unity": "2.4.13",
     "io.extendreality.tilia.visuals.interactablehighlighter.unity": "2.1.49",
