@@ -8,6 +8,8 @@ TagManager:
   - Fluid
   - Glass
   - Box
+  - Interactor
+  - DistanceGrab
   layers:
   - Default
   - TransparentFX
