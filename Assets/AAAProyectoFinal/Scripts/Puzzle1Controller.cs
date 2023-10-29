@@ -12,10 +12,21 @@ public class Puzzle1Controller : MonoBehaviour
     public GameObject lampObject1;
     public GameObject lampObject2;
 
-    [SerializeField] bool generatorController;
-    [SerializeField] bool doorController;
+    [SerializeField] bool generatorController;   
     [SerializeField] bool lightController;
+    [SerializeField] bool doorController;
 
+    private void Update()
+    {
+        if (generatorController == true && lightController == false && doorController == true) 
+        {
+            unlockDoor();
+        }
+        else
+        {
+            lockDoor();
+        }
+    }
     public void generatorON()
     {
         generatorController = true;
@@ -28,50 +39,58 @@ public class Puzzle1Controller : MonoBehaviour
     }
     public void doorON()
     {
-        if (energyValue == 1)
+        if (generatorController == true) 
         {
             doorController = true;
             energyValue = 0;
-            unlockDoor();
-        }       
+        }
+        
     }
     public void doorOFF()
     {
-        doorController = false;
-        energyValue = 1;
-        lockDoor();
+        if (generatorController == true)
+        {
+            doorController = false;
+            energyValue = 1;
+        }
+            
     }
     public void lightON()
     {
-        if (energyValue == 1) 
+        if (generatorController == true)
         {
             lightController = true;
             energyValue = 0;
             turnOnLights();
         }
+            
     }
     public void lightOFF()
     {
-        lightController = false;
-        energyValue = 1;
-        turnOffLights();
+        if (generatorController == true) 
+        {
+            lightController = false;
+            energyValue = 1;
+            turnOffLights();
+        }
+            
     }
-    public void unlockDoor()
+    private void unlockDoor()
     {
         unlockable1.SetActive(false);
         unlockable2.SetActive(false);
     }
-    public void lockDoor()
+    private void lockDoor()
     {
         unlockable1.SetActive(true);
         unlockable2.SetActive(true);
     }
-    public void turnOnLights()
+    private void turnOnLights()
     {
         lampObject1.SetActive(true);
         lampObject2.SetActive(true);
     }
-    public void turnOffLights()
+    private void turnOffLights()
     {
         lampObject1.SetActive(false);
         lampObject2.SetActive(false);
