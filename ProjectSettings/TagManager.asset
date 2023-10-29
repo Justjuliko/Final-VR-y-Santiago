@@ -10,6 +10,7 @@ TagManager:
   - Box
   - Interactor
   - DistanceGrab
+  - UV
   layers:
   - Default
   - TransparentFX
