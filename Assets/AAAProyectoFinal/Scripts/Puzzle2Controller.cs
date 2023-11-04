@@ -7,6 +7,7 @@ public class Puzzle2Controller : MonoBehaviour
 {
     public GameObject code;
     [SerializeField] bool codeVisible;
+    [SerializeField] GameObject canvas;
 
     string Code = "623";
     string Nr = null;
@@ -39,6 +40,7 @@ public class Puzzle2Controller : MonoBehaviour
         {
             unlockable3.SetActive(false);
             unlockable4.SetActive(false);
+            canvas.SetActive(false);
         }
         else 
         {

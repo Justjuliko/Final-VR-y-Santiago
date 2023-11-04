@@ -3,7 +3,22 @@ guid: ee4d070d0e5d5d343a37a88d3295df03
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blanco
+    second: {fileID: 2100000, guid: 6c38857e8b7eb0540baab87702c105f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iris_
+    second: {fileID: 2100000, guid: 5bd72a53af0738941a5c7085ac30950a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marron
+    second: {fileID: 2100000, guid: d34ea59cb191a4247a22fde41320d383, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

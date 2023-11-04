@@ -4,25 +4,32 @@ using UnityEngine;
 
 public class SecretObj : MonoBehaviour
 {
-    public float TimeLeft;
-    public bool TimerOn = false;
+    [SerializeField] GameObject unlockable1;
+    [SerializeField] GameObject unlockable2;
 
+    [SerializeField] AudioSource collectSecretSound;
+    [SerializeField] int count = 0;
+
+    public void collectSecret()
+    {
+        collectSecretSound.Play();
+        count++;
+    }
     private void Update()
     {
-        if(TimerOn) 
-        { 
-            if(TimeLeft > 0)
-            {
-                TimeLeft -= Time.deltaTime;
-            }
-            if (TimeLeft <= 0)
-            {
-                GameObject.Destroy(gameObject);
-            }
+        if (count == 3)
+        {
+            unlockable1.SetActive(false);
+            unlockable2.SetActive(false);
         }
-    }
-    public void Timer()
-    {
-        TimerOn = true;
+        if (count >= 3)
+        {
+            count = 3;
+        }
+        else
+        {
+            unlockable1.SetActive(true); 
+            unlockable2.SetActive(true);
+        }
     }
 }
