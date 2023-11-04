@@ -43097,6 +43097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 784b4574d2784034897136b21b8196da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  indicator: {fileID: 1650287582}
   energyValue: 0
   unlockable1: {fileID: 1308398961}
   unlockable2: {fileID: 1491617934}
