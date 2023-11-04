@@ -27,6 +27,7 @@ public class AINavmesh : MonoBehaviour
         {
             agent.destination = playerPos.position;
             animator.SetFloat("Move", agent.velocity.magnitude);
+            agent.speed = 3;
         }
         
     }
