@@ -11,11 +11,13 @@ TagManager:
   - Interactor
   - DistanceGrab
   - UV
+  - Obstacle
+  - Throwable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Obstacle
   - Water
   - UI
   - 
