@@ -17,4 +17,11 @@ public class AttackPlayer : MonoBehaviour
             puzzle4.ResetPlayerPos();
         }
     }
+    private void OnTriggerStay(Collider GameObject)
+    {
+        if (GameObject.CompareTag("Player"))
+        {
+            puzzle4.ResetPlayerPos();
+        }        
+    }
 }
