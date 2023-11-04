@@ -31,6 +31,7 @@ MonoBehaviour:
     m_Url: https://registry.npmjs.org
     m_Scopes:
     - io.extendreality
+    - com.fight4dream
     m_IsDefault: 0
     m_Capabilities: 0
     m_ConfigSource: 4

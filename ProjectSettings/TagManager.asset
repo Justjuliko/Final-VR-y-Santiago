@@ -13,6 +13,7 @@ TagManager:
   - UV
   - Obstacle
   - Throwable
+  - Ducto
   layers:
   - Default
   - TransparentFX

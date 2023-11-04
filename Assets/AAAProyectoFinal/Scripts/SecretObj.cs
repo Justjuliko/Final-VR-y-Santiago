@@ -15,7 +15,7 @@ public class SecretObj : MonoBehaviour
             {
                 TimeLeft -= Time.deltaTime;
             }
-            if (TimeLeft < 0)
+            if (TimeLeft <= 0)
             {
                 GameObject.Destroy(gameObject);
             }
