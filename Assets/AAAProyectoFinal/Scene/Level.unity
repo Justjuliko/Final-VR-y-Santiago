@@ -3982,7 +3982,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 2
-  MaxDistance: 6.68
+  MaxDistance: 8
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -45492,6 +45492,7 @@ Transform:
   - {fileID: 1509277667}
   - {fileID: 1597565335}
   - {fileID: 1752077874}
+  - {fileID: 1493037243}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1382335350
@@ -49879,6 +49880,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491617934}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1493037243 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fc76378d38add304a8879727aa6799e8, type: 3}
+  m_PrefabInstance: {fileID: 2140000004}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1498110388
 GameObject:
   m_ObjectHideFlags: 0
@@ -70237,7 +70243,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1381653367}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fc76378d38add304a8879727aa6799e8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70261,7 +70267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fc76378d38add304a8879727aa6799e8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fc76378d38add304a8879727aa6799e8, type: 3}
       propertyPath: m_LocalRotation.z
@@ -70868,4 +70874,3 @@ SceneRoots:
   - {fileID: 1108864793}
   - {fileID: 934529321}
   - {fileID: 1015098443}
-  - {fileID: 2140000004}
