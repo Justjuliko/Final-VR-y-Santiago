@@ -5,16 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class AttackPlayer : MonoBehaviour
 {
+    [SerializeField] Puzzle4Reset puzzle4;
+
     SphereCollider attackCol;
     [SerializeField] AudioSource screamSound;
-    [SerializeField] string scene;
 
     private void OnTriggerEnter(Collider GameObject)
     {
         if(GameObject.CompareTag("Player"))
         {
-            screamSound.Play();
-            SceneManager.LoadScene(scene);
+            puzzle4.ResetPlayerPos();
         }
     }
 }
