@@ -6,8 +6,10 @@ using UnityEngine.AI;
 public class AINavmesh : MonoBehaviour
 {
     [SerializeField] Transform movePos;
+    [SerializeField] Transform playerPos;
     private NavMeshAgent agent;
     Animator animator;
+    bool playerAsTarget = false;
 
     private void Awake()
     {
@@ -16,12 +18,24 @@ public class AINavmesh : MonoBehaviour
     }
     private void Update()
     {
-        agent.destination = movePos.position;
-
-        animator.SetFloat("Move", agent.velocity.magnitude);
+        if (playerAsTarget==false)
+        {
+            agent.destination = movePos.position;
+            animator.SetFloat("Move", agent.velocity.magnitude);
+        }
+        else if (playerAsTarget==true)
+        {
+            agent.destination = playerPos.position;
+            animator.SetFloat("Move", agent.velocity.magnitude);
+        }
+        
     }
     public void UpdatePos(Vector3 newPos)
     {
         movePos.position = newPos;
+    }
+    public void PlayerTarget()
+    {
+        playerAsTarget = true;
     }
 }
