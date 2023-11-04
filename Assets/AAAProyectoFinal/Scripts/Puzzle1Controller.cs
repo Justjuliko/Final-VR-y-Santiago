@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Puzzle1Controller : MonoBehaviour
 {
-    [SerializeField] float energyValue = 0;
+    [SerializeField] EnergyIndicator indicator;
+
+    [SerializeField] int energyValue = 0;
 
     public GameObject unlockable1;
     public GameObject unlockable2;
@@ -26,6 +28,14 @@ public class Puzzle1Controller : MonoBehaviour
         {
             lockDoor();
         }
+        if (energyValue == 0)
+        {
+            indicator.Red();
+        }
+        if (energyValue == 1)
+        {
+            indicator.Green();
+        }          
     }
     public void generatorON()
     {
