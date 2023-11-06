@@ -9,7 +9,7 @@ public class AINavmesh : MonoBehaviour
     [SerializeField] Transform playerPos;
     private NavMeshAgent agent;
     Animator animator;
-    bool playerAsTarget = false;
+    public bool playerAsTarget = false;
 
     private void Awake()
     {
